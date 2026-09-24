@@ -1,33 +1,41 @@
-HELP.md
-target/
-.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
+# ── Secrets ──
+.env
+.env.local
 
-### STS ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
+# ── Python ──
+.venv/
+__pycache__/
+*.py[cod]
+.mypy_cache/
+.ipynb_checkpoints/
 
-### IntelliJ IDEA ###
-.idea
-*.iws
-*.iml
-*.ipr
+# ── OS ──
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
 
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
-
-### VS Code ###
+# ── Dev tooling ──
+.claude/
+.codex/
+.cursor/
 .vscode/
+
+# ── Database & model artifacts ──
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+aviation_intelligence.db
+flight_trails.json
+models/*.pkl
+models/*.joblib
+
+# ── Cached / generated data ──
+flights.html
+static/map.html
+
+# ── Dev-only scripts ──
+_archive/
+_diag2.py
+design_mockup*.html
